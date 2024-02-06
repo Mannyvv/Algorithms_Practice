@@ -12,6 +12,12 @@ result = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]
 #         result[row][column] = X[row][column] + Y[row][column]
 
 
-result = [[X[row][column] + Y[row][column] for column in range(len(X[0])) ]for row in range(len(X))]
+# result = [[X[row][column] + Y[row][column] for column in range(len(X[0])) ]for row in range(len(X))]
+# for r in result:
+#     print(r)
+
+
+result = [[0]*len(X)]*len(X[0])
+
 for r in result:
     print(r)
